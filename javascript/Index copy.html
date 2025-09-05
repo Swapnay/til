@@ -6,13 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form onsubmit="mydata(event)">
+    <form onsubmit="validate(event)">
     <label for="name"> Name:</label>
-    <input name="text" id="uname" required><label for="name">user name required</label><br/>
+    <input name="text" id="uname" >
+    <p id="namep"></p>
+    <br/>
     <lable for = "email">Email:</lable>
-    <input type="email" id="uemail" required><br/>
+    
+    <input type="email" id="uemail" ><br/>
+    <p id="emailp"></p>
     <lable for = "password">Password:</lable>
-    <input type="password" id="upassword" required/><br/>
+    <input type="password" id="upassword" /><br/>
+    <p id="passwordp"></p>
     <select id="drop">
         <option value="---select city---"> select city</option>
         <option value="city1">city1</option>
